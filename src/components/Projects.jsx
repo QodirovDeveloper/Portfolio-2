@@ -63,7 +63,7 @@ export default function Projects() {
               You can see more projects in my{" "}
               <a
                 href="https://github.com/QodirovDeveloper"
-                className="text-[#0DCAF0] btn-link"
+                className="text-[#0DCAF0] underline"
                 target="_blank"
               >
                 GitHub
