@@ -110,7 +110,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full py-2 rounded-md bg-blue-700 hover:bg-blue-600 transition font-medium"
               >
-                Send 🚀
+                Send
               </motion.button>
             </motion.form>
           </div>

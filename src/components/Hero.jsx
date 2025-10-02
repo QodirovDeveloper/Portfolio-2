@@ -60,7 +60,7 @@ export default function Hero() {
         </div>
 
         {/* MOVING TEXT TOP */}
-        <div className="absolute top-90 w-full overflow-hidden">
+        <div className="absolute top-90 w-full overflow-hidden movingText">
           <motion.div
             initial={{ x: "0%" }}
             animate={{ x: "-50%" }}
@@ -85,7 +85,7 @@ export default function Hero() {
         </div>
 
         {/* MOVING TEXT BOTTOM */}
-        <div className="absolute bottom-0 w-full overflow-hidden">
+        <div className="absolute bottom-0 w-full overflow-hidden movingText">
           <motion.div
             initial={{ x: "0%" }}
             animate={{ x: "-50%" }}
