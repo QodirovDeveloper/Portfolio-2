@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #155DFC;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #155DFC;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #155DFC black;
+}
