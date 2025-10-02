@@ -13,16 +13,34 @@ export default function Hero() {
           className="absolute inset-0 pointer-events-none 
           bg-[linear-gradient(to_bottom,rgba(0,0,0,0.6),transparent_20%,transparent_80%,rgba(0,0,0,0.6))] "
         ></div>
+
+        {/* TEXT */}
         <div className="text-white flex flex-col items-center select-none justify-center pt-52 z-50 uppercase relative">
-          <p className="lg:text-6xl md:text-4xl text-[32px] py-2 font-medium text-center">
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="lg:text-6xl md:text-4xl text-[32px] py-2 font-medium text-center"
+          >
             HI, I'M Hasanboy <br /> Kadirov
-          </p>
-          <p className="md:text-lg text-[16px] sm:py-2 pb-2 font-medium text-center">
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="md:text-lg text-[16px] sm:py-2 pb-2 font-medium text-center"
+          >
             I am a frontend developer. <br />I build websites and web
             applications.
-          </p>
+          </motion.p>
 
-          <div className="flex gap-2">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            className="flex gap-2"
+          >
             <a
               href="#contact"
               className="rounded-md bg-blue-600 py-2 px-6 cursor-pointer 
@@ -38,9 +56,10 @@ export default function Hero() {
             >
               CV
             </button>
-          </div>
+          </motion.div>
         </div>
 
+        {/* MOVING TEXT TOP */}
         <div className="absolute top-90 w-full overflow-hidden">
           <motion.div
             initial={{ x: "0%" }}
@@ -65,6 +84,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
+        {/* MOVING TEXT BOTTOM */}
         <div className="absolute bottom-0 w-full overflow-hidden">
           <motion.div
             initial={{ x: "0%" }}
